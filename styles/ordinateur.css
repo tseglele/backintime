@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.niveauDeux{
+    background-image: url(../assets/lightDown.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.inter{
+    width:50px;
+    position:absolute;
+    top:  320px;
+}
+.lampe{display: none;
+    position:absolute;
+    left: 120px;
+}
+#ordi{display: none;
+    position:absolute;
+    top: 260px;
+    left: 180px;
+    width: 80px;
+}
+#ecran{
+  background-color:black;
+    width: 100%;
+    height: 100%;
+}
+#centrer{
+    position: absolute;
+    top: 30%;
+  background-color:#77a3ebc1;
+  width: 100%;
+  height: 40vh;
+}
+.exit{ 
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+.exit img{
+    width: 5%;
+    margin-left: 48%;
+}
+.entre{
+    position: absolute;
+    bottom: 30%;
+    left: 40%;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+}
+#motPasse{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    border: none;
+    width:250px ;
+    height: 30px;
+    border-radius: 15px;
+}
+#bureau{display: none;
+    position: absolute;
+    bottom: 220px ;
+    left:90px;
+}
+.baterie{
+    position: absolute;
+    left: 95%;
+  
+}
+.wifi{
+    position: absolute;
+    left: 90%;
+
+}
+
+.lightUp{
+    background-image: url("../assets/basement.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.lightZoom{
+    background-image: url("../assets/lampZoom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#ecranBureau{
+    background-color:black;
+    width: 100%;
+    height: 100vh;
+}
+
+.accueil{  
+    margin-top: 200px;
+     background-image: url("../assets/frame.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+      width: 100vh;
+     height: 100vh;
+    }
+        
+.popUp{
+    background-color:white;
+     position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 500px;
+    height: 200px;
+}
+.popUp p{
+    margin: 10%;
+    text-align: center;
+
+}
+.bar{
+    background-color:#B3D2CB;
+    width: 500px;
+    height: 20px;
+}
+
+.bar img{
+    width: 18px;
+}
+.mission{   
+    background-color: #407058c6;
+    width: 100%;
+    height: 100%;
+
+}
+
+.accept{ 
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 170px;
+    text-decoration: none;
+    background-color:rgb(36, 33, 33);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+#quete{
+    color: white;
+  
+}
+#quete p{
+    text-align: center;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 115px;
+}
+.usine{
+position: absolute;
+margin-top: 100px;
+margin-left: 125px;
+text-decoration: none;
+background-color:black;
+color: white;
+padding: 20px;
+border:2px solid white;
+border-radius: 15px;
+}

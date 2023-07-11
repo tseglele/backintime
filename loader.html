@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loader en Canvas</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      #canvas {
+        display: block;
+        margin: 300px;
+        border: 2px solid rgb(100, 100, 100);
+        border-radius: 20px;
+      }
+      #logo{
+        margin-top: 200px;
+      }
+      p{
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <audio src="assets/dreamIt.mp3" autoplay loop></audio>
+  <img src="assets/back_in_time.png" alt="#" id="logo">
+    <canvas id="canvas" width="300" height="35"></canvas>
+<p>DE  NOUVEAU NIVEAU SORTENT TOUTES LES SEMAINES !</p>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+     
+      const totalProgress = 100;
+      const step = 5; 
+      let currentProgress = 0;
+      let imagePosition = 0; 
+
+      
+      function updateProgress() {
+        currentProgress += step;
+        drawImage()
+        imagePosition = currentProgress;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, imagePosition, canvas.height);
+
+        setTimeout(updateProgress, 500);
+
+      }
+
+    
+      function drawImage() {
+        const image = new Image();
+        image.src = 'assets/loader.png';
+
+        image.onload = function() {
+          ctx.drawImage(image, imagePosition - image.width / 2, canvas.height / 2 - image.height / 2);
+        };
+
+        setTimeout(function() {
+            window.location.href = 'game.html';
+          }, 9000);
+        };
+
+      
+
+     
+      updateProgress();
+    </script>
+  </body>
+</html>

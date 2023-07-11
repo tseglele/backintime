@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateur</title>
+    <link rel="stylesheet" href="styles/ordinateur.css">
+</head>
+<body>  
+      <audio src="assets/dreamIt.mp3" autoplay loop></audio>
+    <div class="niveauDeux" >
+        <img src="assets/bureau.png" alt="#" id="bureau">
+        <img src="assets/interrupteur.png" alt="#" class="inter">
+        <img src="assets/lampe.png" alt="" class="lampe">
+        <img src="assets/ordinateur 2.png" alt="#" id="ordi">
+    </div>
+    <div class="lightZoom"style="display: none;" ></div>
+    <div id="ecran"  style="display: none;">
+        
+        <div id="centrer">
+            <div id="menu">
+                <img src="assets/google.png" alt="#">
+                <img src="assets/baterie2.png" alt="#" class="baterie">
+                <img src="assets/wifi.png" alt="#" class="wifi">
+
+            </div>
+
+            <input type="text" name="motPasse" id="motPasse">
+            <button  onclick="verifierMot()" class="entre">Entrer</button>
+            <p id="message"></p>
+            <p>Chances restantes : <span id="chancesRestantes">3</span></p>
+            <div class="exit"><img src="assets/quit.png" alt=""></div>
+        </div>
+
+    </div>
+    <div id="ecranBureau" style="display: none;">
+        
+        <div class="accueil">
+            <div class="popUp one">
+                <div class="bar">
+                     <img src="assets/pop1.png" alt="#">
+                </div>
+                    <p>Félicitations pour avoir trouver le mot de passe mais nous n'avons pas beaucoup de temps</p>
+            </div>
+
+            <div class="popUp two"      style="display:none;">
+                <div class="bar">
+                    <img src="assets/pop1.png" alt="#">
+                </div>
+                <p> Je t'explique la situation actuelle.Apple invente la dernière IA qui a plongé la planète dans un KO technologique sans précedent.</p>
+            </div>
+            <div class="popUp three" style="display:none;">
+                <div class="bar">
+                    <img src="assets/pop1.png" alt="#">
+                </div>
+                <p> Te voilà accorder une nouvelle chance de tout réparer.Et si on recommençait à ZERO ??</p>
+            </div>
+        </div>
+  
+        <div class="lightZoom" style="display:none;">
+
+        </div>
+        <div class="mission" style="display:none;">
+            <button class="accept">Accepter</button>
+        </div>
+        <div id="quete"  style="display:none;">
+            <p>Ta mission sera d’aller dans l’usine,
+                fabriquer une machine a voyager dans
+                le temp
+                ECO - CONCU !
+                Tu devras alors trouver les objets a recycler 
+                et répondre aux question !
+                Tu as 1 MIN !
+                Si tu échoue la planète explosera ! </p>
+                <a href="loader.html"class="usine">Entrer dans l'usine</a>
+                </div>
+    </div>
+    <script src="scripts/ordinateur.js"></script>
+</body>
+</html>
